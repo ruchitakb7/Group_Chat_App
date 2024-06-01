@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat Page</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/chat.css">
+</head>
+<body  style="background-image:url(https://static.vecteezy.com/system/resources/previews/023/029/252/non_2x/green-background-hd-wallpapers-pulse-for-your-desktop-free-free-photo.jpg);">
+    <header>
+      <h5 id="user"></h5>
+    </header>
+    <div id="groups" >
+        <center><h3>Groups</h3> </center>
+       
+        <br>
+        <button onclick="creategrp()" style="font-size:small;">Create Group</button> 
+        <br>
+        <div id="grpform" style="display: none;">
+         
+        <input type="text"  id="grpname" placeholder="Enter group name" required>
+        <button onclick="grpcreated()">Create</button>
+      
+        
+        </div>
+         <br>
+        <div id="grplist" style="margin-top: 20px; width: fit-content;">
+
+        </div>
+        
+
+    </div>
+    
+    <div id="chat" style="display: none;">
+
+    
+   
+     
+    <div id="grouptitle" > </div>
+        <div class="container" >
+          
+   
+
+        </div>
+      
+    
+
+    </div>
+   
+
+      <div class="footer">
+
+        <button onclick="logoutpage()" id="logoutbtn" style="float: left; display:none">Log out </button>
+        <button onclick="loginpage()" id="loginbtn" style="float: left;">Log In</button>
+           
+        <div id="msginput" style="float: left; margin-left: 30%; display: none;">
+          <form enctype="multipart/form-data">
+            <input type="text" id="message" placeholder="type your message" style="width: 300px;"    >
+            <input type="file" id="file" placeholder="choose file" style="width: 200px;">
+            <button id="sendbtn">send</button>
+          </form>
+        </div>
+        
+       
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+
+
+header {
+    overflow: hidden;
+    font-weight: bold;
+    background-color: orange;
+    padding: 10px 10px;
+    font-size: medium;   
+    height: 40px;
+  }
+
+  .container{
+    width: 400px;
+    overflow: auto;
+    max-height: 300px;
+    margin-left: 27%;
+  }
+
+  #grouptitle{
+    width: 400px;
+    height:40px;
+    background-color: white;
+    margin-left: 27%;
+    text-align: center;
+    
+  }
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: yellowgreen;
+    color: white;
+    text-align: center;
+ }
+ 
+  p{
+    width:300px;
+    font-weight: bold;
+    font-size: small;
+  }
+
+  #chat{
+   
+    width: 70%;
+    float: left;
+    padding: 20px;
+  
+  }
+
+  #groups{
+    
+    width: 30%;
+     overflow:scroll;
+    float: left;
+    padding: 20px;
+    height: 460px;
+    
+  }
+
+  #groupdetails{
+    
+   float:left;
+  
+  }
+
+  button{
+    border: none;
+    font-size: 15px;
+  }
+  
+  
